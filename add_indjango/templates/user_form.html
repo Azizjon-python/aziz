@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>Foydalanuvchi haqida ma'lumotlar</h2>
+    <p>Ism: {{ user_info.name }}</p>
+    <p>Yoshi: {{ user_info.age }}</p>
+    <p>Onasi: {{ user_info.mother }}</p>
+    <p>Email: {{ user_info.email }}</p>
+{% endblock %}
+

@@ -1,0 +1,10 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+    <p>Mashinani o'chirasizmi: {{ car.name_car }}</p>  <!-- 'Cars' o'rniga 'car' -->
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">O'chirish</button>
+    </form>
+{% endblock %}
